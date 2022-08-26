@@ -30,7 +30,7 @@ axios.get(_99co.address)
         const lastPage = $('ul.SearchPagination-links > li:nth-last-child(2) > a').text()
         if (parseInt(lastPage) === NaN) console.log(`${lastPage} is not a number`)
 
-        for (i = 1; i <= 5; i++) {
+        for (i = 1; i <= lastPage; i++) {
             let currentPage = i;
             let currentListing = [];
             let title;
