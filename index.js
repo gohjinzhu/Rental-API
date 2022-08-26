@@ -36,7 +36,7 @@ axios.get(_99co.address)
             let title;
             let price;
             let url;
-            axios.get(`https://www.99.co/singapore/rent?listing_type=rent&map_bounds=1.5827095153768858%2C103.49449749970108%2C1.1090706240313446%2C104.12483807587296&page_num=${i}&page_size=35&property_segments=residential&query_coords=1.3039947%2C103.8298507&query_limit=radius&query_type=city&radius_max=1000&rental_type=&show_cluster_preview=true&show_description=true&show_internal_linking=true&show_meta_description=true&show_nearby=true&sort_field=recency&sort_order=desc&zoom=11`)
+            await axios.get(`https://www.99.co/singapore/rent?listing_type=rent&map_bounds=1.5827095153768858%2C103.49449749970108%2C1.1090706240313446%2C104.12483807587296&page_num=${i}&page_size=35&property_segments=residential&query_coords=1.3039947%2C103.8298507&query_limit=radius&query_type=city&radius_max=1000&rental_type=&show_cluster_preview=true&show_description=true&show_internal_linking=true&show_meta_description=true&show_nearby=true&sort_field=recency&sort_order=desc&zoom=11`)
                 .then(response => {
                     const html = response.data
                     const $ = cheerio.load(html)
@@ -54,7 +54,7 @@ axios.get(_99co.address)
                         listing[currentPage][index]['price'] = price;
                     })        
             })
-        } 
+        }
         console.log(listing)
     })
 
