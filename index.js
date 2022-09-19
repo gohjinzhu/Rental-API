@@ -1,4 +1,7 @@
-const PORT = 8000
+if (process.env.NODE_ENV !== "production") {
+    require('dotenv').config();
+}
+const PORT = process.env.PORT
 const express = require('express')
 const axios = require('axios')
 const cheerio = require('cheerio')
