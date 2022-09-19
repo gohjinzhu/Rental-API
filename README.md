@@ -1,6 +1,5 @@
 # Rental-API
-# climate-change-live-api
-A Demo to show how to build your own API and host in on RapidAPI
+An API that return rentals advertisement from various websites
 
 ## To run this project
 
