@@ -1,5 +1,6 @@
 # Rental-API
-An API that return rentals advertisement from various websites
+An API that return unit rental advertisement in Singapore from various websites
+Results are collected by webscraping
 
 ## To run this project
 
@@ -18,3 +19,8 @@ npm run start
 ```
 
 3. Open [http://localhost:8000/rental](http://localhost:8000/rental) with your browser to see the results of the scrape in your terminal.
+
+## Example of response (result of 5 pages)
+Note: the number of response is limited to reduce the load of website. Webscraping may be oppose with some website policy.
+![image](https://user-images.githubusercontent.com/94891192/191440567-b07edadb-10e3-42d0-a230-84f95b70b557.png)
+
