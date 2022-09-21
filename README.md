@@ -15,7 +15,7 @@ npm i
 2. Now run the server:
 
 ```bash
-npm run start
+nodemon index
 ```
 
 3. Open [http://localhost:8000/rental](http://localhost:8000/rental) with your browser to see the results of the scrape in your terminal.
